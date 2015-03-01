@@ -46,11 +46,37 @@ root {
 
 .header-heading {
     background: #3399cc;
+    width: 415px;
+    height: 87px;
     font-family: FormataBQ;
     color:  #ffffff;
     font-size: 42px; /* Approximation due to font substitution */
-    font-weight: 400;
+    font-weight: 100;
     line-height: 44px; /* Approximation due to font substitution */
+    text-align: left;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.headerBox {
+    
+    padding: 10px;
+    border-radius: 6px;
+    background-color:  rgba(255, 51, 153, 0.9);
+    box-shadow: 0px 1px 4px 0px #a2a2a2;
+    width: 290px;
+    height: 174px;
+}
+
+.headerBox p {
+    margin: 0 auto;
+    font-family: FormataBQ;
+    color:  #ffffff;
+    font-size: 24px; /* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 30px; /* Approximation due to font substitution */
     text-align: left;
 }
 
