@@ -1,0 +1,58 @@
+/*
+    Document   : styleguide.css
+    Created on : 2015-03-01 01:23 PM
+    Author     : GilDavid
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+.logo {
+    background-image: url ("assets/Logo.png");
+    height: 100px;
+    width: 100px;
+}
+
+.button {
+    position: relative;
+    border-radius: 6px;
+    background-color:  #3399cc;
+    width: 178px;
+    height: 34px;
+    padding-left: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+}
+
+.arrow-right { 
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid white;
+}
+
+.header-heading {
+    background: #3399cc;
+    font-family: FormataBQ;
+    color:  #ffffff;
+    font-size: 42px; /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 44px; /* Approximation due to font substitution */
+    text-align: left;
+}
+
+
+
