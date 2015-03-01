@@ -71,13 +71,17 @@ root {
 }
 
 .headerBox p {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     font-family: FormataBQ;
     color:  #ffffff;
     font-size: 24px; /* Approximation due to font substitution */
     font-weight: 300;
     line-height: 30px; /* Approximation due to font substitution */
     text-align: left;
+}
+
+.headerBox .read-more {
+    font-size: 15px;
 }
 
 
