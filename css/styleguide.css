@@ -7,17 +7,23 @@
     To change this template use Tools | Templates.
 */
 
+/* ------- GENERAL -----------
+   -----------------------------------  */ 
+
 root {
     display: block;
 }
 
 body {
-    background: white;
+    background: #e5e5e5;
 }
 
 p, h4 {
     margin: 0;
 }
+
+/* ------- BUTTON -----------
+   -----------------------------------  */ 
 
 .button {
     position: relative;
@@ -46,6 +52,10 @@ p, h4 {
 	border-left: 8px solid white;
 }
 
+/* ------- HEADER-HEADING -----------
+   -----------------------------------  */ 
+
+
 .header-heading {
     width: 415px;
     height: 87px;
@@ -60,6 +70,9 @@ p, h4 {
 .strong {
     font-weight: bold;
 }
+
+/* ------- HEADER BOX -----------
+   -----------------------------------  */ 
 
 .headerBox {
     display: inline-block;
@@ -81,16 +94,32 @@ p, h4 {
     text-align: left;
 }
 
-.headerBox .read-more {
+/* ------- READ-MORE COMPONENT -----------
+   -----------------------------------  */ 
+
+.read-more {
+    color: white;
+}
+
+.read-more p {
+    display: inline-block;
     font-size: 15px;
+    margin-bottom: 0;
+    height: 20px;
+    line-height: 20px;
 }
 
 .read-more img {
+    display: inline-block;
     width: 27px;
     height: 20px;
     margin-right: 7px;
     vertical-align: middle;
+    float: left;
 }
+
+/* ------- SECTION NAV ICON -----------
+   -----------------------------------  */ 
 
 .section-nav-icon {
     display: inline-block;
@@ -101,6 +130,9 @@ p, h4 {
     margin: 0;
     text-align:center;
 }
+
+/* ------- SECTION BOX -----------
+   -----------------------------------  */ 
 
 .section-box {
     display: inline-block;
@@ -144,13 +176,16 @@ p, h4 {
     margin-left: 10px;
 }
 
+/* ------- BIG STORY BOX -----------
+   -----------------------------------  */ 
+
 .big-story-box {
     padding: 20px;
     display: inline-block;
     border-radius: 2px;
     background-color:  #ffffff;
     width: 309px;
-    height: 180px;
+    height: 169px;
 }
 
 .big-story-image {
@@ -168,25 +203,24 @@ p, h4 {
     margin-left: 10px;
     font-family: FormataBQ;
     color:  #565656;
-    font-size: 19px; /* Approximation due to font substitution */
+    font-size: 19px; 
     font-weight: 300;
-    line-height: 28px; /* Approximation due to font substitution */
+    line-height: 28px; 
     text-align: left;
 }
 
 .big-story-footer {
     border-top: 1px #dddddd solid;
-    margin-top: 20px;
-    padding-top: 15px;
+    margin-top: 17px;
+    padding-top: 12px;
     clear: both;
 }
 
 .big-story-footer h4 {
     display:inline-block;
-    margin-bottom: 3px;
     font-family: FormataBQ;
     color:  #3aa6db;
-    font-size: 14.127px; /* Approximation due to font substitution */
+    font-size: 14.127px; 
     font-weight: 300;
     text-align: left;
 }
@@ -203,5 +237,28 @@ p, h4 {
 
 .big-story-footer img {
     float: right;
+}
+
+/* ------- SMALL STORY BOX -----------
+   -----------------------------------  */ 
+
+.small-story-box {
+    overflow: hidden;
+    border-radius: 2px;
+    background-color:  #ffffff;
+    width: 110px;
+    height: 97px;
+}
+
+.small-story-box img{
+    margin-top: 20px;
+}
+
+.medium-story-box {
+    padding: 10px;ng: 10px;
+    border-radius: 2px;
+    background-color:  #ffffff;
+    width: 229px;
+    height: 209px;
 }
 
