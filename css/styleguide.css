@@ -11,10 +11,12 @@ root {
     display: block;
 }
 
-.logo {
-    background-image: url ("assets/Logo.png");
-    height: 100px;
-    width: 100px;
+body {
+    background: white;
+}
+
+p, h4 {
+    margin: 0;
 }
 
 .button {
@@ -45,7 +47,6 @@ root {
 }
 
 .header-heading {
-    background: #3399cc;
     width: 415px;
     height: 87px;
     font-family: FormataBQ;
@@ -61,7 +62,7 @@ root {
 }
 
 .headerBox {
-    
+    display: inline-block;
     padding: 10px;
     border-radius: 6px;
     background-color:  rgba(255, 51, 153, 0.9);
@@ -84,5 +85,123 @@ root {
     font-size: 15px;
 }
 
+.read-more img {
+    width: 27px;
+    height: 20px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
 
+.section-nav-icon {
+    display: inline-block;
+}
+
+.section-nav-icon p {
+    color: white;
+    margin: 0;
+    text-align:center;
+}
+
+.section-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 2px;
+    background-color:  rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 1px 4px 0px #a2a2a2;
+    width: 276px;
+    height: 99px;
+}
+
+.section-box-date {
+    float: left;
+    border-radius: 2px;
+    background-color:  #3399cc;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    width: 69px;
+    height: 99px;
+}
+
+.section-box-date p {
+    color: white;
+    text-align: center;
+    
+}
+
+.section-box-date p:nth-of-type(1) {
+    border-bottom: 1px white dashed;
+    font-size: 48px;
+}
+
+.section-box-date p:nth-of-type(2) {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.section-box-text {
+    width: 195px;
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.big-story-box {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 2px;
+    background-color:  #ffffff;
+    width: 309px;
+    height: 180px;
+}
+
+.big-story-image {
+    display: inline-block;
+    float: left;
+    background-color:  rgba(255, 0, 96, 0.8);
+    width: 99px;
+    height: 111px;
+    border: 1px solid;
+}
+
+.big-story-top p {
+    display: inline-block;
+    width: 190px;
+    margin-left: 10px;
+    font-family: FormataBQ;
+    color:  #565656;
+    font-size: 19px; /* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 28px; /* Approximation due to font substitution */
+    text-align: left;
+}
+
+.big-story-footer {
+    border-top: 1px #dddddd solid;
+    margin-top: 20px;
+    padding-top: 15px;
+    clear: both;
+}
+
+.big-story-footer h4 {
+    display:inline-block;
+    margin-bottom: 3px;
+    font-family: FormataBQ;
+    color:  #3aa6db;
+    font-size: 14.127px; /* Approximation due to font substitution */
+    font-weight: 300;
+    text-align: left;
+}
+
+.big-story-footer p {
+    display:inline-block;
+    font-family: Arial;
+    color:  #565656;
+    font-size: 14.128px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.big-story-footer img {
+    float: right;
+}
 
