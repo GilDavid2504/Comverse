@@ -57,12 +57,11 @@ p, h4 {
 
 
 .header-heading {
-    height: 87px;
     font-family: FormataBQ;
     color:  #ffffff;
-    font-size: 42px; /* Approximation due to font substitution */
+    font-size: 42px; 
     font-weight: 100;
-    line-height: 44px; /* Approximation due to font substitution */
+    line-height: 44px; 
     text-align: left;
     padding-top:50px;
 }
@@ -93,9 +92,9 @@ p, h4 {
     margin: 0 auto 50px auto;
     font-family: FormataBQ;
     color:  #ffffff;
-    font-size: 24px; /* Approximation due to font substitution */
+    font-size: 24px; 
     font-weight: 300;
-    line-height: 30px; /* Approximation due to font substitution */
+    line-height: 30px; 
     text-align: left;
 }
 
@@ -139,8 +138,18 @@ p, h4 {
 
 /* ------- SECTION BOX -----------
    -----------------------------------  */ 
+.section-box-container {
+    width: 296px;
+    display: inline-block;
+}
+
+.section-box-container:not(:last-of-type) {
+    margin-right: 35px;
+}
+
 
 .section-box {
+    margin: 10px 0;
     display: inline-block;
     padding: 10px;
     border-radius: 2px;

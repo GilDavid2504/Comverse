@@ -14,6 +14,8 @@ body {
     text-align:center;
 }
 
+
+
 /* ------- NAVBAR -----------
    -----------------------------------  */ 
 
@@ -79,7 +81,7 @@ nav li {
     background-size: 100% 100%;
 }
 
-/* ------- BLUE_BG -----------
+/* ------- BOTTOM_WHEEL -----------
    -----------------------------------  */ 
 
 .bottom-wheel {
@@ -87,6 +89,10 @@ nav li {
     background: url('../assets/bottom_wheel.png');
     background-size: 100% 100%;
     margin-top: -2px;
+}
+
+.bottom-wheel-headlines p {
+    display: inline;
 }
 
 
