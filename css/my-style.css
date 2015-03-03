@@ -26,7 +26,8 @@ nav {
     padding: 14px 0;
     height: 62px;
     position:relative;
-    z-index:10
+    z-index:10;
+    align-items: baseline;
 }
 
 .container {
@@ -55,8 +56,27 @@ nav li {
 .login-search {
     float: right;
     display: inline-block;
+    height: inherit;
 }
 
+.lang-login p:first-of-type {
+    border-right: 1px solid;
+    display: inline-block;
+    padding-right: 27px;
+    margin-bottom: 30px;
+}
+
+.lang-login p:last-of-type {
+    float: right;
+}
+
+.search {
+    background: url('../assets/Magnifying_Glass.png') no-repeat scroll 150px 4px;
+    border-radius:5px;
+    height: 20px;
+    width: 170px;
+    border: 1px solid gray;
+}
 
 /* ------- GIANTWHEEL -----------
    -----------------------------------  */ 

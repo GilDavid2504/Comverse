@@ -153,6 +153,7 @@ p, h4 {
 .section-box-container {
     width: 296px;
     display: inline-block;
+    margin-top: 30px;
 }
 
 .section-box-container:not(:last-of-type) {
