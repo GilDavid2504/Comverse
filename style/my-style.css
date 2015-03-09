@@ -14,6 +14,14 @@ body {
     text-align:center;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
 
 
 /* ------- NAVBAR -----------
