@@ -2,148 +2,247 @@
 <html>
 <head>
     <title>Comverse</title>
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
-    <link rel="stylesheet" type="text/css" href="css/my-style.css">
+    <link rel="stylesheet" type="text/css" href="style/styleguide.css">
+    <link rel="stylesheet" type="text/css" href="style/my-style.css">
 </head>
 <body>
-    <nav class="navbar">
+    <header class="navbar">
         <div class="container">
-            <img src="assets/Logo.png"/>
-            <ul>
-                <li>YOUR NEEDS</li><!--
-             --><li>OUR PORTFOLIO</li><!--     
-             --><li>NEWS &amp; MEDIA</li><!--    
-             --><li>ABOUT COMVERSE</li>    
-            </ul>
+            <a class="nav-icon-container"><img src="assets/Logo.png"/></a>
+            <nav class="header-nav">
+                <ul class="main-links uppercase">
+                    <li class="nav-link">
+                        <a>your needs</a>
+                    </li>
+                    <li class="nav-link uppercase">
+                        <a>our portfolio</a>
+                    </li>
+                    <li class="nav-link uppercase">
+                        <a>news &amp; media</a>
+                    </li>
+                    <li class="nav-link uppercase">
+                        <a>about comverse</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="login-search">
-                <div class="lang-login">
-                    <p>EN</p>
-                    <p>Customer login</p>
-                </div>
-                <div class="search"></div>
+                <select class="lang">
+                    <option value="EN" class="uppercase">EN</option>
+                    <option value="HE" class="uppercase">HE</option>
+                </select> 
+                <a class="login">Customer login</a>
+                <input type="search" name="search" class="search"/>
             </div>
-        </div>    
-    </nav>
-    <div class="giantwheel">
+        </div>
+    </header>
+    <section class="vision">
         <div class="container">
-            <p class='header-heading'><span class="strong">Free</span> Your Markets From<br> IT <span class="strong">Complexity</span></p>
-            <p class='header-text'>Comverse Policy Studio<br> <strong>1st</strong> Ever Marketing-Oriented Policy Tool</p>
-            <div class='button'>LEARN MORE<div class='arrow-right'></div></div>
+            <h1 class="heading capital"><span class="strong">free</span> your markets from <span class="uppercase">IT</span><span class="strong">Complexity</span></h1>
+            <h3 class="capital">comverse policy studio <span class="strong">1st</span> ever marketing-oriented policy tool</h3>
+            <!-- arrow will be added by css :after -->
+            <a class="button uppercase">learn more</a> 
             <ol class="carousel">
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ol>
-             <div class='headerBox'>
-                 <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                 <div class="read-more">
-                     <p>Read more</p>
-                     <img src="assets/GlobalMarket.png"/>
-                 </div>
-             </div><!--
-            
-          --><div class='headerBox'>
-                 <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                 <div class="read-more">
-                     <p>Read more</p>
-                     <img src="assets/notebook.png"/>
-                 </div>
-             </div><!--
-            
-          --><div class='headerBox'>
-                 <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                 <div class="read-more">
-                     <p>Read more</p>
-                     <img src="assets/watch_now.png"/>
-                 </div>
-             </div>
-        </div>
-    </div>
-    
-    <div class="blue-bg">
-        <div class="container">
-            <p class="header-heading center">WHAT CAN WE DO FOR YOU?</p>
-            
-            <div class="nav-icon-container center">
-              <div class='section-nav-icon'>
-                  <img src="assets/Cloud.png"/>
-                  <p>Cloud computing</p>
-              </div>
-              <div class='section-nav-icon'>
-                  <img src="assets/Robot.png"/>
-                  <p>Machine To machine</p>
-              </div>
-              <div class='section-nav-icon'>
-                  <img src="assets/mountain.png"/>
-                  <p>Over the top</p>
-              </div>
-              <div class='section-nav-icon'>
-                  <img src="assets/Cloud.png"/>
-                  <p>Cloud computing</p>
-              </div>
-              <div class='section-nav-icon'>
-                  <img src="assets/people.png"/>
-                  <p>Managed services</p>
-              </div>
-              <div class='section-nav-icon'>
-                  <img src="assets/Cloud.png"/>
-                  <p>Cloud computing</p>
-              </div>
-            </div>
-            <div class='button middle'>See all of our solutions<div class='arrow-right'></div></div>
-        </div>
-    </div>
-    
-    <div class="bottom-wheel">
-        <div class="container">
-            <p class="header-heading center">WHAT'S HAPPENING AT COMVERSE?</p>
-            <div>
-                     <div class="section-box-container">
-                            <p class="header-heading">NEWS</p>
-                            <div class='section-box'>
-                                <div class='section-box-date'>
-                                    <p>04</p>
-                                    <p>SEP</p>
-                                </div>
-                                <p class='section-box-text'>Comverse Regains lead In Convergent Charging Market Regains Lead In</p>
-                            </div>
-                            <div class="read-more">
-                                <img src="assets/news.png"/>
-                                <p>All News</p>
-                            </div>
-                     </div><!--
-                  --><div class="section-box-container">
-                            <p class="header-heading smaller">EVENTS</p>
-                            <div class='section-box'>
-                                <div class='section-box-date'>
-                                    <p>04</p>
-                                    <p>SEP</p>
-                                </div>
-                                <p class='section-box-text'>Comverse Regains lead In Convergent Charging Market Regains Lead In</p>
-                            </div>
-                            <div class="read-more">
-                                <img src="assets/events.png"/>
-                                <p>All Events</p>
-                            </div>
-                     </div><!--
-                  --><div class="section-box-container">
-                            <p class="header-heading"></p>
-                            <div class='section-box'>
-                                <div class='section-box-date'>
-                                    <p>04</p>
-                                    <p>SEP</p>
-                                </div>
-                                <p class='section-box-text'>Comverse Regains lead In Convergent Charging Market Regains Lead In</p>
-                            </div>
-                            <div class="read-more">
-                                <img src="assets/events.png"/>
-                                <p>All Events</p>
-                            </div>
-                      </div>
+            <div class="advantages">
+                <div class="advantage">
+                    <h3 class="capital">comverse is value-added service global market leader.</h3>
+                    <a class="read-more">Read more</a>
+                </div>
+                <div class="advantage">
+                    <h3 class="capital">comverse is value-added service global market leader.</h3>
+                    <a class="read-more">Read more</a>
+                </div>
+                <div class="advantage">
+                    <h3 class="capital">comverse is value-added service global market leader.</h3>
+                    <a class="read-more">Read more</a>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
+    <section class="offers">
+        <div class="container">
+            <h2 class="heading uppercase">what can we do for you?</h2>
+            <ul class="services">
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Cloud computing</span>
+                </li>
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Machine to machine</span>
+                </li>
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Over the top</span>
+                </li>
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Cloud computing</span>
+                </li>
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Managed services</span>
+                </li>
+                <li class="service">
+                    <i class="icon"></i>
+                    <span>Cloud computing</span>
+                </li>
+            </ul>
+            <a class="button">See all of out solutions</a>  
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <h2 class="uppercase">what's happening at comverse?</h2>
+            <div class="new">
+                <h4 class="heading sub-heading uppercase">news</h4>
+                <div class="news-main">
+                    <div class='date'>
+                        <time><span class="day">04</span><span class="month uppercase">sep</span></time>
+                    </div>
+                    <h4 class='capital'>comverse regains lead In convergent charging market regains lead in</h4>
+                </div>
+                <a class="capital">all news</a>
+            </div>
+            <div class="new">
+                <h4 class="heading sub-heading uppercase">news</h4>
+                <div class="news-main">
+                    <div class='date'>
+                        <time><span class="day">04</span><span class="month uppercase">sep</span></time>
+                    </div>
+                    <h4 class='capital'>comverse regains lead in convergent charging market regains lead in</h4>
+                </div>
+                <a class="capital">all events</a>
+            </div>
+            <div class="new">
+                <h4 class="heading sub-heading uppercase"></h4>
+                <div class="news-main">
+                    <div class='date'>
+                        <time><span class="day">04</span><span class="month uppercase">sep</span></time>
+                    </div>
+                    <h4 class='capital'>comverse regains lead In convergent charging market regains lead in</h4>
+                </div>
+                <a class="capital">all events</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonies">
+        <div class="container">
+            <div class="testimony-group">
+                <h2 class="uppercase">success stories</h2>
+                <article class="testimony">
+                    <img src="assets/sergey-korotych.png"/>
+                    <q>We have very good and very warm relations with Comverse. We always achievet...</q>
+                    <footer class='testimony-footer'>
+                        <img src="assets/3mob_logo.png"/>
+                        <h4 class="uppercase">sergey korotych</h4>
+                        <h5 class="capital">Deputy CTO, 3 Mob Ukraine</h5>
+                    </footer>
+                </article>
+                <ul class='partners'>
+                    <li><img src="assets/cycle30.png"/></li>
+                    <li><img src="assets/bull.png"/></li>
+                     <li><img src="assets/gemplus.png"/></li>
+                </ul>
+            </div>
+            <div class="testimony-group">
+                <ul class='partners'>
+                    <li><img src="assets/mtc.png"/></li>
+                    <li><img src="assets/cable_wireless.png"/></li>
+                    <li><img src="assets/trilogy.png"/></li>
+                </ul>
+                <article class="testimony">
+                    <img src="assets/adale_kehassan.png"/>
+                    <q>Comverse has demonstrated that they are partners, not just suppliers, because they understand our needs, our situations; together we are...</q>
+                    <footer class='testimony-footer'>
+                        <img src="assets/multilinks.png" />
+                        <h4 class="uppercase">adale kehassan</h4>
+                        <h5 class="capital">CIO of Multi-links</h5>
+                    </footer>
+                </article>
+            </div>
+            <div class="testimony-group">
+                <article class="testimony">
+                    <q>Comverse has been able to fully deliver what we want and we have peers...</q>
+                    <footer class='testimony-footer'>
+                        <img src="assets/tatasky.png" />
+                        <h4 class="uppercase">ravishankar</h4>
+                        <h5 class="capital">Tata Sky CIO N.</h5>
+                    </footer>
+                </article>
+                <ul class='partners'>
+                    <li><img src="assets/hp.png"/></li>
+                    <li><img src="assets/atos.png"/></li>
+                </ul>
+            </div>
+            <a class="button capital">All 256 Success Stories</a> 
+        </div>
+    </section>
+    <footer class="additional">
+        <div class="container">
+            <nav class="footer-links">
+                <h3 class="uppercase">key solutions</h3>
+                <ul>
+                    <li><a class="capital">Monetizing Data</a></li>
+                    <li><a class="capital">Over The Top (OTT)</a></li>
+                    <li><a class="capital">Machine To Machine (M2M)</a></li>
+                    <li><a class="capital">Cloud Computing</a></li>
+                    <li><a class="capital">Managed Services</a></li>
+                    <li><a class="capital">Customer Experience Management</a></li>
+                    <li><a class="capital">Rich Communication Suite (RCS)</a></li>
+                    <li><a class="capital">Social Media</a></li>
+                    <li><a class="capital">4G/LTE</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-links">
+                <h3 class="uppercase">products &amp; services</h3>
+                <ul>
+                    <li><a class="capital">Billing</a></li>
+                    <li><a class="capital">VAS</a></li>
+                    <li><a class="capital">Machine To Machine (M2M)</a></li>
+                    <li><a class="capital">Mobile Internet</a></li>
+                    <li><a class="capital">Global Services</a></li>
+                    <li><a class="capital">Training Services</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-links">
+                <h3 class="uppercase">company</h3>
+                <ul>
+                    <li><a>executive profiles</a></li>
+                    <li><a>clients</a></li>
+                    <li><a>investors</a></li>
+                    <li><a>partners</a></li>
+                    <li><a>corporate responsibility</a></li>
+                    <li><a>industry involvement</a></li>
+                    <li><a>careers</a></li>
+                </ul>
+            </nav>
+            <div class="footer-appendix">
+                <small class="copyright">Copyright&copy;2012 Comverse, Inc.</small>
+                <small class="privacy"><a>Privacy Policy</a></small>
+            </div>
+            <aside>
+                <h4 class="uppercase">latest blog post</h4>
+                <div class='blog-date'>
+                    <time><span class="day">18</span><span class="month capital">July</span></time>
+                </div>
+                <h5 class="capital'">Comverse Regains Lead in Convergent Charging Market</h5>
+                <h4 class="uppercase">subscribe to comverse</h4>
+                <form>
+                    <input type="email" name="email"/>
+                    <input type="submit" class="sign-up" value="SIGN UP"/>
+                </form>
+                <ul class="social-links">
+                    <li class="youtube-icon"></li>
+                    <li class="twitter-icon"></li>
+                    <li class="linkedin-icon"></li>
+                </ul>
+            </aside>
+        </div>
+    </footer>
 </body>
 </html>
