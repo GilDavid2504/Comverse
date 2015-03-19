@@ -14,8 +14,9 @@ root {
     display: block;
 }
 
-ul, p, h3, h4, h5 {
+ol, ul, p, h1, h2, h3, h4, h5 {
     margin: 0;
+    padding: 0;
 }
 
 .uppercase {
@@ -127,6 +128,7 @@ ol.carousel li {
 
 .advantage:nth-of-type(2) {
      background-color:  rgba(90, 190, 40, 0.9);
+     margin: 0 35px; 
 }
 
 .advantage:nth-of-type(3) {
@@ -170,7 +172,6 @@ ol.carousel li {
 .service .icon {
     display: block;
     background: url('../assets/Cloud.png') no-repeat;
-    width: 130px;
     height: 80px;
 }
 
@@ -260,7 +261,7 @@ ol.carousel li {
     display: inline-block;
     border-radius: 2px;
     background-color:  #ffffff;
-    width: 309px;
+    width: 328.75px;
     height: 169px;
 }
 
@@ -270,7 +271,6 @@ ol.carousel li {
     background-color:  rgba(255, 0, 96, 0.8);
     width: 99px;
     height: 111px;
-    border: 1px solid;
 }
 
 .testimony q {
@@ -294,7 +294,7 @@ ol.carousel li {
 
 .testimony-footer h5,
 .testimony-footer h4 {
-     display:inline-block;
+    display: block;
     text-align: left;
     font-size: 14px;
 }
@@ -313,24 +313,42 @@ ol.carousel li {
 }
 
 .testimony-footer > img {
-    margin-top:7px;
+    max-height:100%;
+    max-width: 100%;
+    margin: auto 0;
     float: right;
 }
 
 /* ------- Testimony Partners -----------
    -----------------------------------  */ 
-
-.partners li {
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 2px;
-    background-color:  #ffffff;
-    width: 110px;
-    height: 97px;
+.partners {
+    height: 90px;
 }
 
+.partners li {
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    background-color:  #ffffff;
+    width: 116px;
+    height: 90px;
+}
+
+.partners li:nth-of-type(2),
+.partners li:nth-of-type(3) {
+    margin-left: 10px;
+}
+
+
 .partners img {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* -------  Footer Links --------------
@@ -338,6 +356,8 @@ ol.carousel li {
 
 .footer-links {
     color: #fff;
+    margin: 30px 50px 20px 0;
+    vertical-align: top;
 }
 
 .footer-links ul {
@@ -346,8 +366,13 @@ ol.carousel li {
     margin-top: 10px;
 }
 
+.footer-links li {
+   display:block;
+    margin-top: 5px;
+}
 .footer-links h3 {
-    font-size: 24px;
+   font-size: 14px;
+   font-weight: 100;
 }
 
 /* -------  Blog Post   --------------
@@ -356,9 +381,11 @@ ol.carousel li {
 aside.blog {
     padding: 10px;
     width: 240px;
-    height: 280px;
+    height: 300px;
     background: rgba(225,225,225, 0.28);
     color: #fff;
+    display: inline-block;
+    position: relative;
 }
 
 .blog h4 {
@@ -372,7 +399,8 @@ aside.blog {
 .blog-main {
    width: 100%;
    height: 110px;
-   border-bottom: 1px solid #fff;
+   padding-bottom:20px;
+   border-bottom: 1px solid #6A6A6A;
 }
 
 .blog-date {
@@ -390,11 +418,12 @@ aside.blog {
 .blog-date .month {
     display: block;
     font-size: 24px;
+    letter-spacing: 2px;
 }
 
-.blog-main h5 {
+.blog  h5 {
     line-height: 26px;
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: 18px;
     font-weight:lighter;
     float: right;
@@ -421,7 +450,6 @@ aside.blog {
 
 .blog input[type='submit'] {
     width: 35%;
-    padding:0 5%;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     background: #3399cc;
@@ -430,23 +458,16 @@ aside.blog {
 
 
 /* ------- Social Links -----------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 .social-links li {
-  display: inline-block;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
 }
 
-.social-links li:first-child {
-  
-}
 
-.social-links li:nth-of-type(2) {
-  
-}
-
-.social-links li:last-child {
-  
-}
 
 
 

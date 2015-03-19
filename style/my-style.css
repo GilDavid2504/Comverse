@@ -22,9 +22,17 @@ body {
     text-transform: capitalize;
 }
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
 
 
-/* ------- NAVBAR -----------
+
+/* ------------- HEADER --------------
    -----------------------------------  */ 
 
 header {
@@ -57,11 +65,11 @@ nav li, nav ul {
     display: inline-block;
 }
 
-nav li:not(:first-of-type) {
+.header-nav li:not(:first-of-type) {
     border-left: 1px solid;
 }
 
-nav li {
+.header-nav li {
     padding: 0 10px;
 }
 
@@ -93,43 +101,192 @@ nav li {
     border: 1px solid gray;
 }
 
-/* ------- GIANTWHEEL -----------
+/* ------------ VISION ---------------
    -----------------------------------  */ 
 
-.giantwheel {
-    height: 550px;
+.vision {
+    height: 560px;
     background: url('../assets/giantwheel_bg.jpg');
     background-size: 100% 100%;
 }
 
-.header-text {
-    color: white;
+.vision .heading {
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.vision .container > h3 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.vision a.button {
     margin: 15px 0;
 }
 
-/* ------- BLUE_BG -----------
+.carousel {
+    margin-bottom: 70px;
+}
+
+/* ------------- OFFERS --------------
    -----------------------------------  */ 
 
-.blue-bg {
+.offers {
     height: 420px;
     background: url('../assets/blue_bg.jpg');
     background-size: 100% 100%;
 }
 
-/* ------- BOTTOM_WHEEL -----------
+.services {
+    margin: 30px 72px 50px 72px;
+}
+
+.service {
+    vertical-align: top;
+}
+
+.service .icon {
+    margin: 10px auto;
+}
+
+.service span {
+    height: 15px;
+}
+
+.service:nth-of-type(1) .icon {
+    background: url('../assets/Cloud.png') no-repeat;
+    width: 130px;
+}
+
+.service:nth-of-type(2) .icon {
+    background: url('../assets/Robot.png') no-repeat;
+    width: 86px;
+}
+
+.service:nth-of-type(3) .icon {
+    background: url('../assets/mountain.png') no-repeat;
+}
+
+.service:nth-of-type(4) .icon {
+    background: url('../assets/Cloud.png') no-repeat;
+    width: 130px;
+}
+
+.service:nth-of-type(5) .icon {
+    background: url('../assets/people.png') no-repeat;
+    width: 97px;
+}
+
+.service:nth-of-type(6) .icon {
+    background: url('../assets/Cloud.png') no-repeat;
+    width: 130px;
+}
+
+/* ------------- NEWS ----------------
    -----------------------------------  */ 
 
-.bottom-wheel {
+.news {
     height: 420px;
     background: url('../assets/bottom_wheel.png');
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
     background-size: 100% 100%;
     margin-top: -2px;
 }
 
-.bottom-wheel-headlines p {
-    display: inline;
+.new {
+    width: 300px;
 }
 
+.new:nth-of-type(2) {
+    margin: 0 50px;
+}
 
+/* ----------- TESTIMONIES -----------
+   -----------------------------------  */ 
+
+.testimonies {
+    background: #ECECEC;
+    height: 525px;
+    margin-top: -8px;
+}
+
+.testimony-group {
+    width: 368.75px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.testimony-group:nth-of-type(2) {
+    margin: 0 10px;
+}
+
+.testimony-group.no-picture {
+    width: 242.5px;
+}
+
+.testimony-group.no-picture .testimony {
+    width: 202.5px;
+}
+
+.testimony-group:nth-of-type(2) q {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.testimony-group:nth-of-type(1) .testimony,
+.testimony-group:nth-of-type(3) .testimony {
+    margin-bottom: 10px;
+}
+
+.testimony-group:nth-of-type(2) .testimony {
+    margin-top: 10px;
+}
+
+.testimonies .heading {
+    color: #565656;
+    margin-bottom: 40px;
+}
+
+.testimonies .button {
+    margin-top: 20px;
+}
+
+/* ----------- ADDITIONAL -----------
+   -----------------------------------  */ 
+
+.additional {
+    background: #1F1F1F;
+    position: relative;
+    height: 320px;
+}
+
+.footer-appendix {
+    color: #6A6A6A;
+    position: absolute;
+    bottom: 10px;
+}
+
+.copyright {
+    border-right: 1px solid #565656;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 5px;
+}
+
+.youtube-icon {
+    background: url('../assets/YouTube3.png') center no-repeat;
+}
+
+.twitter-icon {
+    background: url('../assets/Twitter.png') center no-repeat;
+}
+
+.linkedin-icon {
+    background: url('../assets/LinkedIn.png') center no-repeat;
+}
 
 
