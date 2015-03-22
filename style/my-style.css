@@ -41,15 +41,20 @@ header {
     width: 100%;
     padding: 14px 0;
     height: 62px;
-    position:relative;
     z-index: 10;
     align-items: baseline;
+    position: relative;
+    
 }
 
 .container {
     width: 1000px;
     height: inherit;
     margin: 0 auto;
+}
+
+.navbar .container {
+    position: relative;
 }
 
 a.nav-icon-container {
@@ -65,12 +70,8 @@ nav li, nav ul {
     display: inline-block;
 }
 
-.header-nav li:not(:first-of-type) {
-    border-left: 1px solid;
-}
-
 .header-nav li {
-    padding: 0 10px;
+    padding: 12px 8px 14px 8px;
 }
 
 .login-search {
@@ -211,6 +212,7 @@ nav li, nav ul {
     background: #ECECEC;
     height: 525px;
     margin-top: 3px;
+    
 }
 
 .testimony-group {
@@ -254,7 +256,7 @@ nav li, nav ul {
     margin-top: 20px;
 }
 
-/* ----------- ADDITIONAL -----------
+/* ----------- ADDITIONAL ------------
    -----------------------------------  */ 
 
 .additional {
@@ -292,4 +294,56 @@ nav li, nav ul {
     background: url('../assets/LinkedIn.png') center no-repeat;
 }
 
+/* ----------- TABS-EXPENDS ------------
+   -----------------------------------  */ 
 
+.nav-link:hover, .lang:hover, .login:hover {
+     color: #3D99CA;
+}
+
+.nav-link:hover {
+    background: #fff;
+    box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
+    border: 1px solid rgb(219, 205, 205);
+    border-bottom: none;
+    color: #3D99CA;
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+.button:hover {
+	background: -moz-linear-gradient(top, #40a2d5 0%, #289ad2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#40a2d5), color-stop(100%, #289ad2));
+	background: -webkit-linear-gradient(top, #40a2d5 0%, #289ad2 100%);
+	background: -o-linear-gradient(top, #40a2d5 0%, #289ad2 100%);
+	background: -ms-linear-gradient(top, #40a2d5 0%, #289ad2 100%);
+	background: linear-gradient(to bottom, #40a2d5 0%, #289ad2 100%);
+}
+
+.button:active {
+	background: -moz-linear-gradient(top, #1286c1 0%, #2e97cb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1286c1), color-stop(100%, #2e97cb));
+	background: -webkit-linear-gradient(top, #1286c1 0%, #2e97cb 100%);
+	background: -o-linear-gradient(top, #1286c1 0%, #2e97cb 100%);
+	background: -ms-linear-gradient(top, #1286c1 0%, #2e97cb 100%);
+	background: linear-gradient(to bottom, #1286c1 0%, #2e97cb 100%);
+}
+
+.nav-link:hover .tabs-expend {
+    display:block;
+}
+
+.partners li:hover .front {
+    -webkit-transform:translateY(-100%);
+    -moz-transform:translateY(-100%);
+    transform:translateY(-100%);
+}
+
+.partners li .front {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
