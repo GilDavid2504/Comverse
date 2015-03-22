@@ -256,11 +256,6 @@ ol.carousel li {
 /* ------- Testimony -----------
    -----------------------------------  */ 
 
-.testimony-wrapper {
-    position: relative;
-    height: 219px;
-}
-
 .testimony {
     padding: 20px;
     display: inline-block;
@@ -350,23 +345,46 @@ ol.carousel li {
 .front {
     background: #fff;
     z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .back {
-    background:  url('../assets/logos_generic.jpg'); 
     width: 100%;
     height: 100%;
     position: absolute;
-    
 }
 
-.partners .front,
+.testimony-wrapper .back {
+    background: #3AA6DB;
+    line-height: 27px;
+    color: #fff;
+    overflow: hidden;
+    padding: 7.5%;
+    width: 85%;
+    height: 85%;
+}
+
+.testimony-wrapper .back q {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.testimony-wrapper .back q::before {
+    content: url('../assets/quote-blue.png');
+}
+
+.testimony-wrapper .back q::after {
+    content: url('../assets/quote-blue-opp.png');
+}
+
+
 .partners .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    background:  url('../assets/logos_generic.jpg'); 
 }
-
 
 .partners img {
     position: absolute;

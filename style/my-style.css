@@ -44,7 +44,6 @@ header {
     z-index: 10;
     align-items: baseline;
     position: relative;
-    
 }
 
 .container {
@@ -215,6 +214,18 @@ nav li, nav ul {
     
 }
 
+.testimony-wrapper {
+    position: relative;
+    height: 209px;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+
+.testimony-group:nth-of-type(2) .testimony-wrapper {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 .testimony-group {
     width: 368.75px;
     display: inline-block;
@@ -236,15 +247,6 @@ nav li, nav ul {
 .testimony-group:nth-of-type(2) q {
     font-size: 16px;
     line-height: 22px;
-}
-
-.testimony-group:nth-of-type(1) .testimony,
-.testimony-group:nth-of-type(3) .testimony {
-    margin-bottom: 10px;
-}
-
-.testimony-group:nth-of-type(2) .testimony {
-    margin-top: 10px;
 }
 
 .testimonies .heading {
@@ -335,7 +337,8 @@ nav li, nav ul {
     display:block;
 }
 
-.partners li:hover .front {
+.partners li:hover .front,
+.testimony-wrapper:hover .testimony {
     -webkit-transform:translateY(-100%);
     -moz-transform:translateY(-100%);
     transform:translateY(-100%);
@@ -345,5 +348,11 @@ nav li, nav ul {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+}
+
+.testimony-wrapper .testimony{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
 }
