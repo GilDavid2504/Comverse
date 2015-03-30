@@ -45,7 +45,7 @@ ol, ul, p, h1, h2, h3, h4, h5 {
     box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
     font-family: Gill, Arial;
     color:  #ffffff;
-    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 34px;
     text-align: left;
@@ -55,7 +55,7 @@ ol, ul, p, h1, h2, h3, h4, h5 {
     content: ""; 
     position: absolute;
     top: 28%;
-    right: 10%;
+    right: 4%;
     width: 0; 
     height: 0; 
     border-top: 8px solid transparent;
@@ -65,30 +65,35 @@ ol, ul, p, h1, h2, h3, h4, h5 {
 
 
 /* ------- Crousel -----------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 ol.carousel li {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: #178BC5;
-  border-radius: 2px;
-  margin-right: 2px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #178BC5;
+    border-radius: 2px;
+    margin-right: 2px;
+    color: #fff;
+    font-size: 0px;
 }
 
 
 
 /* ------- Heading -----------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 
 .heading {
     font-family: FormataBQ;
     color: #ffffff;
-    font-size: 42px; 
+    font-size: 4.2rem; 
     font-weight: 100;
-    line-height: 44px; 
     text-align: left;
+    margin: 0;
+}
+
+.heading:first-of-type {
     padding-top:50px;
 }
 
@@ -96,14 +101,40 @@ ol.carousel li {
     font-weight: bold;
 }
 
-.heading.sub-heading {
-    font-size: 36px;
+.sub-heading {
+    font-size: 2rem;
+}
+
+.sub-heading:first-of-type {
+    padding-top: 10px;
+}
+
+.sub-heading:last-of-type {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .heading {
+        padding: 0 10px;
+        font-size: 2.9rem;
+    }
+
+    .heading:first-of-type {
+        padding-top:15px;
+    }
+
+    .sub-heading {
+        padding: 0 10px;
+        font-size: 1.8rem;
+    }
 }
 
 /* ------- Advantages -----------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 .advantage {
+    position:relative;
     display: inline-block;
     padding: 20px;
     border-radius: 6px;
@@ -113,13 +144,14 @@ ol.carousel li {
 }
 
 .advantage h3 {
-    margin: 0 auto 50px auto;
     font-family: FormataBQ;
     color:  #ffffff;
-    font-size: 24px; 
+    font-size: 2.4rem; 
     font-weight: 300;
     line-height: 30px; 
     text-align: left;
+    box-sizing:border-box;
+    width: 85%;
 }
 
 .advantage:nth-of-type(1) {
@@ -145,11 +177,11 @@ ol.carousel li {
 }
 
 .read-more  {
-    position: relative;
-    display: inline-block;
-    font-size: 17px;
+    position: absolute;
+    font-size: 1.7rem;
     height: 20px;
-    vertical-align: top;
+    left: 10px;
+    bottom: 20px;
 }
 
 .read-more::before {
@@ -170,9 +202,7 @@ ol.carousel li {
 }
 
 .service .icon {
-    display: block;
     background: url('../assets/Cloud.png') no-repeat;
-    height: 80px;
 }
 
 .service span {
@@ -202,11 +232,12 @@ ol.carousel li {
 }
 
 .news-main h4 {
-    width: 210px;
+    width: 71%;
     color: black;
     display: inline-block;
     margin-left: 10px;
-    
+    font-size: 1.6rem;
+    text-align: left;
 }
 
 .date {
@@ -214,7 +245,7 @@ ol.carousel li {
     border-radius: 2px;
     background-color:  #3399cc;
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    width: 69px;
+    width: 25%;
     height: 99px;
 }
 
@@ -227,11 +258,11 @@ ol.carousel li {
 
 .date .day {   
     border-bottom: 1px white dashed;
-    font-size: 48px;
+    font-size: 4.8rem;
 }
 
 .date .month {
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -241,6 +272,7 @@ ol.carousel li {
     color: #fff;
     line-height: 20px;
     vertical-align: top;
+    text-align: left;
 }
 
 .new a::before {
@@ -261,9 +293,10 @@ ol.carousel li {
     display: inline-block;
     border-radius: 2px;
     background-color:  #ffffff;
-    width: 328.75px;
-    height: 169px;
+    width: 368.75px;
+    height: 209px;
     position: absolute;
+    box-sizing: border-box;
     z-index: 10;
 }
 
@@ -271,20 +304,24 @@ ol.carousel li {
     display: inline-block;
     float: left;
     background-color:  rgba(255, 0, 96, 0.8);
-    width: 99px;
-    height: 111px;
+    width: 25%;
+    height: 65%;
+    margin-bottom: 10px;
+    
 }
 
 .testimony q {
     display: inline-block;
-    width: 190px;
+    width: 70%;
+    height: 65%;
     margin-left: 10px;
     font-family: FormataBQ;
     color:  #565656;
-    font-size: 19px; 
+    font-size: 1.7rem; 
     font-weight: 300;
     line-height: 28px; 
     text-align: left;
+    overflow:hidden;
 }
 
 .testimony-footer {
@@ -298,7 +335,7 @@ ol.carousel li {
 .testimony-footer h4 {
     display: block;
     text-align: left;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .testimony-footer h4 {   
@@ -326,20 +363,40 @@ ol.carousel li {
 .partners {
     height: 90px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .partners li {
-    position: relative;
+    position: absolute;
     display: inline-block;
     border-radius: 2px;
     background-color:  #ffffff;
-    width: 116px;
+    width: 32%;
     height: 90px;
 }
 
-.partners li:nth-of-type(2),
+.partners li:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+
+.partners li:nth-of-type(2) {
+    top: 0;
+    right: 0;
+}
+
 .partners li:nth-of-type(3) {
-    margin-left: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.testimony-group:nth-of-type(3) .partners li {
+    width:48.5%;
 }
 
 .front {
@@ -370,7 +427,7 @@ ol.carousel li {
     display: block;
     height: 100%;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .testimony-wrapper .back q::before {
@@ -383,7 +440,8 @@ ol.carousel li {
 
 
 .partners .back {
-    background:  url('../assets/logos_generic.jpg'); 
+    background:  url('../assets/logos_generic.jpg') no-repeat;
+    background-size: 100% 100%;
 }
 
 .partners img {
@@ -398,13 +456,16 @@ ol.carousel li {
 }
 
 /* -------  Footer Links --------------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 .footer-links {
     color: #fff;
     margin: 30px 50px 20px 0;
     vertical-align: top;
+    width: 18%;
+    display: inline-block;
 }
+
 
 .footer-links ul {
     list-style-type: none;
@@ -413,31 +474,32 @@ ol.carousel li {
 }
 
 .footer-links li {
-   display:block;
+    display:block;
     margin-top: 5px;
 }
 .footer-links h3 {
-   font-size: 14px;
-   font-weight: 100;
+    font-size: 1.4rem;
+    font-weight: 100;
 }
 
 /* -------  Blog Post   --------------
-   -----------------------------------  */ 
+-----------------------------------  */ 
 
 aside.blog {
     padding: 10px;
     width: 240px;
-    height: 300px;
+    height: 100%;
     background: rgba(225,225,225, 0.28);
     color: #fff;
     display: inline-block;
     position: relative;
+    box-sizing: border-box;
 }
 
 .blog h4 {
     width: 100%;
     margin: 20px 0 5px 0;
-    font-size: 17px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #3399cc;
 }
@@ -457,20 +519,20 @@ aside.blog {
 
 .blog-date .day {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 800;
 }
 
 .blog-date .month {
     display: block;
-    font-size: 24px;
+    font-size: 2.4rem;
     letter-spacing: 2px;
 }
 
 .blog  h5 {
     line-height: 26px;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight:lighter;
     float: right;
     width: 70%;
@@ -521,15 +583,74 @@ aside.blog {
     display: none;
     position: absolute;
     background: #fff;
+    box-sizing: border-box;
+    padding: 30px 40px 15px 20px;
     box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
     width: 100%;
-    height: 185px;
+    height: 200px;
     top: 80px;
     left: 0;
     border: 1px solid rgb(219, 205, 205);
     border-top: none;
 }
 
+.tabs-expend ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+li.expend-link {
+    display: block;
+    margin: 10px 0;  
+}
+
+.expend-col {
+    width: 30%;
+    height: 100%;
+}
+
+.expend-link a {
+  font: 14px Gill !important;
+  font-weight: bold !important;
+  display: block;
+  text-decoration: none;
+  min-height: 18px !important;
+  color: #3399cc !important;
+  margin-top: 10px;
+}
+
+.expend-pic {
+    box-sizing: border-box;
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 30%;
+    height: 100%;
+    background: url('../assets/Megamenu_About_Comverse.jpg') no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+    border-left: 1px solid black;
+}
+
+.nav-link:nth-of-type(2) .expend-pic {
+    background: url('../assets/megamenu_digital_lifestyle.jpg') no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+}
+
+.nav-link:nth-of-type(3) .expend-pic {
+    background: url('../assets/Megamenu_News_and_media.jpg') no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+}
+
+.nav-link:nth-of-type(4) .expend-pic {
+    background: url('../assets/Megamenu_Your_Needs.jpg') no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+}
 
 
 

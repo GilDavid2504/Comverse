@@ -2,8 +2,14 @@ root {
     display: block;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
+    padding-top: 93px;
+    overflow-x:hidden;
 }
 
 .middle {
@@ -30,37 +36,44 @@ body {
     float: left;
 }
 
+a {
+    font-size: 1.6rem;
+}
 
 
 /* ------------- HEADER --------------
    -----------------------------------  */ 
 
-header {
+.navbar {
     background-color:  #ffffff;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
     width: 100%;
     padding: 14px 0;
-    height: 62px;
-    z-index: 10;
+    height: 92px;
+    z-index: 1000;
     align-items: baseline;
-    position: relative;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
 }
 
 .container {
     width: 1000px;
     height: inherit;
     margin: 0 auto;
-}
-
-.navbar .container {
     position: relative;
 }
+
+.expend-links, .search-button {
+    display:none;
+}
+
 
 a.nav-icon-container {
     display: inline-block;
 }
 
-nav {
+.header-nav {
     display: inline-block;
 }
 
@@ -69,15 +82,16 @@ nav li, nav ul {
     display: inline-block;
 }
 
-.header-nav li {
+.nav-link {
     padding: 12px 8px 14px 8px;
 }
 
 .login-search {
-    float: right;
-    display: inline-block;
+    top: 0;
+    right: 0;
     height: inherit;
     width: 170px;
+    position: absolute;
 }
 
 .lang  {
@@ -101,21 +115,68 @@ nav li, nav ul {
     border: 1px solid gray;
 }
 
+@media screen and (max-width: 1024px) {
+    
+    .container {
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .expend-links, .search-button {
+        width: 50px;
+        height: 50px;
+        display:block;
+        background: #f0f0f0;
+        position: absolute;
+        top: 20px;
+    }
+    
+    .expend-links {
+         left: 10px;
+    }
+    
+    .search-button {
+        right: 10px;
+    }
+    
+    .expend-links button,
+    .search-button button {
+        width: 100%;
+        height: 100%;
+        background: url('../assets/hamburger-icon.png') no-repeat;
+        background-size: 70% 70%;
+        background-position: center;
+    }
+    
+    .search-button button {
+        background: url('../assets/Magnifying_Glass.png') no-repeat;
+        background-size: 70% 70%;
+        background-position: center;
+    }
+
+    .login-search, .header-nav {
+        display: none;
+    }
+
+    a.nav-icon-container {
+        display: block;
+        width: 185px;
+        margin: 0 auto;
+    }
+}
+
 /* ------------ VISION ---------------
    -----------------------------------  */ 
 
 .vision {
-    height: 560px;
+    height: 600px;
     background: url('../assets/giantwheel_bg.jpg');
     background-size: 100% 100%;
+    position: relative;
 }
 
-.vision .heading {
-    width: 450px;
-    margin-bottom: 10px;
-}
-
-.vision .container > h3 {
+.vision .sub-heading {
     color: #fff;
     font-weight: 100;
 }
@@ -126,6 +187,58 @@ nav li, nav ul {
 
 .carousel {
     margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+ 
+    .vision-header {
+       background: rgba(24, 139, 197, 0.8);
+    }
+    
+    .vision {
+        height: 1024px;
+        background-repeat: no-repeat;
+        background-size: 100% 39.5%;
+    }
+
+    .advantages {
+        width: 100%;
+    }
+    
+    .advantage {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .advantage:nth-of-type(2) {
+     background-color:  rgba(90, 190, 40, 0.9);
+     margin: 10px 0px; 
+}
+
+    .vision a.button {
+        margin: 15px 10px;
+    }
+
+    .carousel {
+        margin: 150px 0 20px 10px;
+    }
+    
+    ol.carousel li {
+        width: 30px;
+        height: 30px;
+        font-size: 2.5rem;
+        line-height:30px;
+        text-align: center;
+    }
+
+    ol.carousel li:nth-of-type(2),
+    ol.carousel li:nth-of-type(3),
+    ol.carousel li:nth-of-type(4){
+        background: #e5e5e5;
+        color: #737373;
+    }
 }
 
 /* ------------- OFFERS --------------
@@ -142,44 +255,73 @@ nav li, nav ul {
 }
 
 .service {
+    box-sizing: border-box;
     vertical-align: top;
+    width: 16%;
+    height: 100px;
+    margin: 20px 0;
+    font-size: 1.4rem;
 }
 
 .service .icon {
+    width: 100%;
+    height: 100%;
     margin: 10px auto;
-}
-
-.service span {
-    height: 15px;
+    display: inline-block;
+    margin: 0;
 }
 
 .service:nth-of-type(1) .icon {
-    background: url('../assets/Cloud.png') no-repeat;
-    width: 130px;
+    background: url('../assets/Cloud.png') center no-repeat;
+    background-size: 90% 90%;
+    
 }
 
 .service:nth-of-type(2) .icon {
-    background: url('../assets/Robot.png') no-repeat;
-    width: 86px;
+    background: url('../assets/Robot.png') center no-repeat;
+    background-size: 90% 90%;
 }
 
 .service:nth-of-type(3) .icon {
-    background: url('../assets/mountain.png') no-repeat;
+    background: url('../assets/mountain.png') center no-repeat;
+    background-size: 90% 90%;
 }
 
 .service:nth-of-type(4) .icon {
-    background: url('../assets/Cloud.png') no-repeat;
-    width: 130px;
+    background: url('../assets/Cloud.png') center no-repeat;
+    background-size: 90% 90%;
 }
 
 .service:nth-of-type(5) .icon {
-    background: url('../assets/people.png') no-repeat;
-    width: 97px;
+    background: url('../assets/people.png') center no-repeat;
+    background-size: 90% 90%;
 }
 
 .service:nth-of-type(6) .icon {
-    background: url('../assets/Cloud.png') no-repeat;
-    width: 130px;
+    background: url('../assets/Cloud.png') center no-repeat;
+    background-size: 90% 90%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .services {
+        padding: 50px 10px;
+        margin: 0;
+    }
+    
+    .offers {
+        height: 500px;
+    }
+    
+    .service {
+        box-sizing: border-box;
+        margin: 20px 0;
+        width: 32%;
+    }
+    
+    .offers .button {
+        display: none;
+    }
 }
 
 /* ------------- NEWS ----------------
@@ -204,6 +346,29 @@ nav li, nav ul {
     margin: 0 50px;
 }
 
+@media screen and (max-width: 1024px) {
+    .news {
+        height: 850px;
+        text-align: center;
+    }    
+
+    .new {
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+    .new:nth-of-type(2) {
+        margin: 0;
+    }
+
+    .news-main {
+        width: 100%;
+        box-sizing:border-box;
+        height: 120px;
+    }
+      
+}
+
 /* ----------- TESTIMONIES -----------
    -----------------------------------  */ 
 
@@ -211,7 +376,6 @@ nav li, nav ul {
     background: #ECECEC;
     height: 525px;
     margin-top: 3px;
-    
 }
 
 .testimony-wrapper {
@@ -219,6 +383,7 @@ nav li, nav ul {
     height: 209px;
     margin-bottom:10px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .testimony-group:nth-of-type(2) .testimony-wrapper {
@@ -230,6 +395,7 @@ nav li, nav ul {
     width: 368.75px;
     display: inline-block;
     overflow: hidden;
+    position: relative;
 }
 
 .testimony-group:nth-of-type(2) {
@@ -241,12 +407,11 @@ nav li, nav ul {
 }
 
 .testimony-group.no-picture .testimony {
-    width: 202.5px;
+    width: 100%;
 }
 
-.testimony-group:nth-of-type(2) q {
-    font-size: 16px;
-    line-height: 22px;
+.testimony-group:nth-of-type(3) q {
+    font-size: 1.4rem;
 }
 
 .testimonies .heading {
@@ -258,13 +423,48 @@ nav li, nav ul {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    
+    .testimonies {
+        height: 850px;
+        text-align: center;
+    } 
+    
+    .testimony-group {
+        box-sizing: border-box;
+        width: 90%;
+        height: 318px;
+    }
+
+    .testimony {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+    .testimony-wrapper .back q {
+        font-size: 1.7rem;
+    }
+
+    .testimony-group:nth-of-type(2) .partners {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .testimony-group:nth-of-type(3) {
+        display: none;
+    }
+}
+
 /* ----------- ADDITIONAL ------------
    -----------------------------------  */ 
 
 .additional {
     background: #1F1F1F;
     position: relative;
-    height: 320px;
+    height: 355px;
 }
 
 .footer-appendix {
@@ -277,6 +477,11 @@ nav li, nav ul {
     border-right: 1px solid #565656;
     padding-right: 10px;
     margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.privacy a {
+    font-size: 1.2rem;
 }
 
 .social-links {
@@ -354,5 +559,5 @@ nav li, nav ul {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-
 }
+
